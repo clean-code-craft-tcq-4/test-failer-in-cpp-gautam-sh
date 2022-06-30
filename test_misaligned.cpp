@@ -11,7 +11,7 @@ int main() {
     try {
         std::string testOutOfRangeColor = getMajorColor(10);
     }
-    catch(std::invalid_argument arg) {
+    catch(std::invalid_argument &arg) {
         exceptionThrown = true;
     }
     assert(exceptionThrown);
@@ -20,7 +20,7 @@ int main() {
     try {
         std::string testOutOfRangeColor = getMajorColor(-1);
     }
-    catch(std::invalid_argument arg) {
+    catch(std::invalid_argument &arg) {
         exceptionThrown = true;
     }
     assert(exceptionThrown);
@@ -29,7 +29,7 @@ int main() {
     try {
         std::string testOutOfRangeColor = getMajorColor(6);
     }
-    catch(std::invalid_argument arg) {
+    catch(std::invalid_argument &arg) {
         exceptionThrown = true;
     }
     assert(exceptionThrown);
@@ -43,7 +43,7 @@ int main() {
     try {
         std::string testOutOfRangeColor = getMinorColor(10);
     }
-    catch(std::invalid_argument arg) {
+    catch(std::invalid_argument &arg) {
         exceptionThrown = true;
     }
     assert(exceptionThrown);
@@ -52,7 +52,7 @@ int main() {
     try {
         std::string testOutOfRangeColor = getMinorColor(-1);
     }
-    catch(std::invalid_argument arg) {
+    catch(std::invalid_argument &arg) {
         exceptionThrown = true;
     }
     assert(exceptionThrown);
@@ -61,7 +61,7 @@ int main() {
     try {
         std::string testOutOfRangeColor = getMinorColor(6);
     }
-    catch(std::invalid_argument arg) {
+    catch(std::invalid_argument &arg) {
         exceptionThrown = true;
     }
     assert(exceptionThrown);

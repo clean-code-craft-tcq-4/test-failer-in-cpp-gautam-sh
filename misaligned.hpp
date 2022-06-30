@@ -4,14 +4,14 @@
 
 std::string getMajorColor(int zeroBasedIndex) {
     std::vector<std::string> majorColor = {"White", "Red", "Black", "Yellow", "Violet"};
-    if( zeroBasedIndex < 0 || zeroBasedIndex >= majorColor.size())
+    if( zeroBasedIndex < 0 || zeroBasedIndex >= int(majorColor.size()))
         throw std::invalid_argument("Argument should be positive integer less than or equal to the number of major colors");
     return majorColor[zeroBasedIndex];
 }
 
 std::string getMinorColor(int zeroBasedIndex) {
     std::vector<std::string> minorColor = {"Blue", "Orange", "Green", "Brown", "Slate"};
-    if( zeroBasedIndex < 0 || zeroBasedIndex >= minorColor.size())
+    if( zeroBasedIndex < 0 || zeroBasedIndex >= int(minorColor.size()))
         throw std::invalid_argument("Argument should be positive integer less than or equal to the number of minor colors");
     return minorColor[zeroBasedIndex];
 }
